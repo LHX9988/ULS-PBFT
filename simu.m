@@ -17,7 +17,7 @@ plot(x,y4)
 grid on
 xlabel('Total number of nodes')
 ylabel('Storage overhead (MB)')
-legend('PBFT','ULS-PBFT','Pyramid Scheme1','Pyramid Scheme1')
+legend('PBFT','ULS-PBFT','Pyramid Scheme1','Pyramid Scheme2')
 
 x=100
 s=[0:50]
@@ -27,7 +27,6 @@ b=2
 c=4
 y3=((x./b).^2.*b+x.*b).*s
 y4=((x./c).^2.*c+x.*c).*s
-y5=y2.*1.25
 %y3=(3.*x+4).*(log(0.75.*x+1)./log(4))
 plot(s,y1)
 hold on
@@ -38,7 +37,7 @@ plot(s,y5)
 grid on
 xlabel('Total number of blocks')
 ylabel('Storage overhead (MB)')
-legend('PBFT','ULS-PBFT','Pyramid Scheme1','Pyramid Scheme1','Two-layer PBFT')
+legend('PBFT','ULS-PBFT','Pyramid Scheme1','Pyramid Scheme2')
 
 %% communication overhead
 N=[5:2:100]
